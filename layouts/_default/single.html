@@ -10,7 +10,7 @@
 	<div class="col-sm-6 mx-auto ">
 		<div class="card m-4 ">
 			<div class="card-body">
-				<h5 class="card-title">#{{ .Title }}</h5>
+				<h5 class="card-title">FrankenMovie Plot #{{ .Title }}</h5>
 				<p class="card-text">{{ .Content }}</p>
 			</div>
 		</div>
@@ -21,14 +21,14 @@
 			<h4>{{ .Params.answer }}</h4>
 		</div>
 		<div class="container text-center mt-4">
-			{{with .Prev}}
+			{{with .PrevInSection}}
 			<a class="btn m-1" href="{{.Permalink}}">Previous Movie</a>
 			{{end}}
-			{{with .Next}}
+			{{with .NextInSection}}
 			<a class="btn m-1" href="{{.Permalink}}">Next Movie</a>
 			{{end}}
 		</div>
-		<br>
+		{{ partial "rules" . }}
 	</div>
 </main>
 {{ end }}

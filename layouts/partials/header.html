@@ -1,12 +1,22 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-<!-- 	{{ with .Site.Menus.main }}
-	<nav>
-		<ul>
-			{{ range . }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }} -->
+	<!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
+	<div class="container bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">FrankenMovies</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#">Browse</a>
+					<a class="nav-item nav-link" href="#">Submit Your Own</a>
+				</div>
+			</div>
+			<div class="my-2 my-lg-0 navbar-nav">
+				<a class="nav-item nav-link" href="#">Order Your Copy</a>
+			</div>
+		</nav>
+
+	</div>
 </header>

@@ -1,20 +1,11 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<!-- <time>{{ .Date.Format "02.01.2006 15:04" }}</time> -->
-			<div>
-				{{ .Content }}
-			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			{{ end }}
-		</article>
-	</main>
+<main>
+	<div class="card m-4 mx-auto" style="width: 24rem;">
+		<div class="card-body">
+			<h5 class="card-title">#{{ .Title }}</h5>
+			<p class="card-text">{{ .Content }}</p>
+			<a href="#" class="card-link">Card link</a>
+		</div>
+	</div>
+</main>
 {{ end }}

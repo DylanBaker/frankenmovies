@@ -1,0 +1,12 @@
+.bg-dark {
+    background-color: #a0c7ea!important;
+}
+
+.card {
+    border: 1px solid ;
+    border-radius: 24px;
+    border-color: #a0c7ea!important;
+    background: #a0c7ea;
+    box-shadow:  20px 20px 30px #8aabc9, 
+                -20px -20px 30px #b6e3ff;
+}

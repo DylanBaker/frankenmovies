@@ -1,10 +1,19 @@
 {{ define "main" }}
-	<main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
+<main>
+	{{ partial "rules" . }}
+	<div class="container-fluid">
+		<hr>
+		<div class="row">
+			<h4 class="mx-auto">Most Recent FrankenMovies</h4>
+		</div>
+		<div class="row">
+			<h6 class="mx-auto">Click To Reveal Answers</h6>
+		</div>
+		<div class="row justify-content-center">
+			{{ range first 4 (where site.RegularPages "Type" "in" "movies").ByWeight.Reverse }}
 			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-{{ partial "sidebar.html" . }}
+			{{ end }}
+		</div>
+	</div>
+</main>
 {{ end }}

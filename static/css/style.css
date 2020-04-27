@@ -22,7 +22,6 @@ body {
 .btn {
     border-radius: 24px;
     color: black;
-    font-style: ;
     background: #a0c7ea;
     box-shadow:  6px 6px 12px #8aabc9, 
                  -6px -6px 12px #b6e3ff;
@@ -37,4 +36,8 @@ body {
 
 li {
     margin-top: 1rem;
+}
+
+.summary {
+    color: black;
 }

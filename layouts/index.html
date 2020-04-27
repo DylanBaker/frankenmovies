@@ -10,7 +10,7 @@
 			<h6 class="mx-auto">Click To Reveal Answers</h6>
 		</div>
 		<div class="row justify-content-center">
-			{{ range first 4 (where site.RegularPages "Type" "in" "movies").ByWeight.Reverse }}
+			{{ range first 3 (where site.RegularPages "Type" "in" "movies").ByWeight.Reverse }}
 			{{ .Render "summary" }}
 			{{ end }}
 		</div>

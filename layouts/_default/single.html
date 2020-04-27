@@ -24,8 +24,8 @@
 			{{with .Next}}
 			<a class="btn m-1" href="{{.Permalink}}">Previous Movie</a>
 			{{end}}
-			{{if .PrevPage}}
-			<a class="btn m-1" href="{{.PrevPage.Permalink}}">Next Movie</a>
+			{{with .Prev}}
+			<a class="btn m-1" href="{{.Permalink}}">Next Movie</a>
 			{{end}}
 		</div>
 		<br>

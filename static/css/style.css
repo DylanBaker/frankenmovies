@@ -41,3 +41,7 @@ li {
 .summary {
     color: black;
 }
+
+h5 {
+    font-weight: bold;
+}

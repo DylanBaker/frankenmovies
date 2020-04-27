@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
 	{{ partial "rules" . }}
-	<div class="container-fluid">
+	<div class="container">
 		<hr>
 		<div class="row">
 			<h4 class="mx-auto">Most Recent FrankenMovies</h4>
@@ -14,6 +14,8 @@
 			{{ .Render "summary" }}
 			{{ end }}
 		</div>
+		<hr>
+		{{ partial "submission" . }}
 	</div>
 </main>
 {{ end }}

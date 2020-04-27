@@ -21,10 +21,10 @@
 			<h4>{{ .Params.answer }}</h4>
 		</div>
 		<div class="container text-center mt-4">
-			{{with .Next}}
+			{{with .Prev}}
 			<a class="btn m-1" href="{{.Permalink}}">Previous Movie</a>
 			{{end}}
-			{{with .Prev}}
+			{{with .Next}}
 			<a class="btn m-1" href="{{.Permalink}}">Next Movie</a>
 			{{end}}
 		</div>

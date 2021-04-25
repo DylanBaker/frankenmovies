@@ -7,7 +7,7 @@
 			});
 		});
 	</script>
-	<div class="col-sm-6 mx-auto ">
+	<div class="col-sm-8 mx-auto ">
 		<div class="card m-4 ">
 			<div class="card-body">
 				<h5 class="card-title">FrankenMovie Plot #{{ .Title }}</h5>
@@ -29,6 +29,8 @@
 			{{end}}
 		</div>
 		{{ partial "rules" . }}
+		<hr>
+		{{ partial "subscribe" . }}
 	</div>
 </main>
 {{ end }}
